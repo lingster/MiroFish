@@ -7,16 +7,16 @@ generates predictions, and optionally submits them via the Numerai API.
 
 Usage:
     # Train and generate predictions (no submission):
-    python train_numerai_model.py
+    uv run python train_numerai_model.py
 
     # Train and submit predictions:
-    python train_numerai_model.py --submit
+    uv run python train_numerai_model.py --submit
 
     # Train with custom parameters:
-    python train_numerai_model.py --n-estimators 5000 --learning-rate 0.005
+    uv run python train_numerai_model.py --n-estimators 5000 --learning-rate 0.005
 
     # Use a specific model name for submission:
-    python train_numerai_model.py --submit --model-name YOUR_MODEL_NAME
+    uv run python train_numerai_model.py --submit --model-name YOUR_MODEL_NAME
 """
 
 import argparse

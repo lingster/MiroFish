@@ -8,7 +8,7 @@ Download Numerai tournament data, train a LightGBM prediction model, and submit 
 
 ```bash
 cd numerai
-pip install -r requirements.txt
+uv sync
 ```
 
 ### 2. Configure Numerai API credentials
@@ -35,13 +35,13 @@ claude mcp add --transport http numerai https://api-tournament.numer.ai/mcp --he
 
 ```bash
 # Train model (downloads data automatically on first run)
-python train_numerai_model.py
+uv run python train_numerai_model.py
 
 # Train with custom hyperparameters
-python train_numerai_model.py --n-estimators 5000 --learning-rate 0.005
+uv run python train_numerai_model.py --n-estimators 5000 --learning-rate 0.005
 
 # Train and submit predictions
-python train_numerai_model.py --submit --model-name YOUR_MODEL_NAME
+uv run python train_numerai_model.py --submit --model-name YOUR_MODEL_NAME
 ```
 
 ## Output

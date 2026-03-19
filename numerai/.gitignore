@@ -6,3 +6,6 @@ models/
 
 # Generated predictions
 predictions/
+
+# Virtual environment
+.venv/

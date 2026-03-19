@@ -1,0 +1,8 @@
+# Downloaded datasets (large parquet files)
+data/
+
+# Trained models
+models/
+
+# Generated predictions
+predictions/
